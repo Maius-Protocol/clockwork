@@ -24,11 +24,11 @@ pub struct ThreadExec<'info> {
     #[account(
         mut,
         seeds = [
-            clockwork_network_program::state::SEED_FEE,
+            miclockwork_network_program::state::SEED_FEE,
             worker.key().as_ref(),
         ],
         bump,
-        seeds::program = clockwork_network_program::ID,
+        seeds::program = miclockwork_network_program::ID,
         has_one = worker,
     )]
     pub fee: Account<'info, Fee>,
