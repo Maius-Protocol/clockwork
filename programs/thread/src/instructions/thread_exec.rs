@@ -6,8 +6,8 @@ use anchor_lang::{
     },
     AnchorDeserialize, InstructionData,
 };
-use clockwork_network_program::state::{Fee, Pool, Worker, WorkerAccount};
-use clockwork_utils::thread::{SerializableInstruction, ThreadResponse, PAYER_PUBKEY};
+use miclockwork_network_program::state::{Fee, Pool, Worker, WorkerAccount};
+use miclockwork_utils::thread::{SerializableInstruction, ThreadResponse, PAYER_PUBKEY};
 
 use crate::{errors::ClockworkError, state::*};
 

@@ -10,7 +10,7 @@ pub mod state;
 mod instructions;
 
 use anchor_lang::prelude::*;
-use clockwork_utils::{
+use miclockwork_utils::{
     thread::{SerializableInstruction, Trigger},
     CrateInfo,
 };
