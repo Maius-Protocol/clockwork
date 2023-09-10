@@ -1,5 +1,5 @@
 use chrono::{DateTime, NaiveDateTime, Utc};
-use clockwork_cron::Schedule;
+use miclockwork_cron::Schedule;
 use std::str::FromStr;
 
 use crate::{client::Client, errors::CliError};

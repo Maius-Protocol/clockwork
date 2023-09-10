@@ -138,12 +138,12 @@ esac
     cp -fv "target/$targetTriple/$buildVariant/$bin" "$installDir"
   done
 
-  cp -fv "target/deploy/clockwork_network_program.so" "$installDir/lib"
-  cp -fv "target/deploy/clockwork_thread_program.so" "$installDir/lib"
+  cp -fv "target/deploy/miclockwork_network_program.so" "$installDir/lib"
+  cp -fv "target/deploy/miclockwork_thread_program.so" "$installDir/lib"
   cp -fv "target/deploy/clockwork_webhook_program.so" "$installDir/lib"
 
-  cp -fv "target/deploy/clockwork_network_program.so" "$installDir"
-  cp -fv "target/deploy/clockwork_thread_program.so" "$installDir"
+  cp -fv "target/deploy/miclockwork_network_program.so" "$installDir"
+  cp -fv "target/deploy/miclockwork_thread_program.so" "$installDir"
   cp -fv "target/deploy/clockwork_webhook_program.so" "$installDir"
 )
 

@@ -1290,15 +1290,15 @@ dependencies = [
  "cargo_metadata",
  "chrono",
  "clap 3.2.23",
- "clockwork-cron",
- "clockwork-network-program",
  "clockwork-plugin-utils",
  "clockwork-relayer-api",
- "clockwork-thread-program",
- "clockwork-utils",
  "clockwork-webhook-program",
  "dirs-next",
  "indicatif 0.16.2",
+ "miclockwork-cron",
+ "miclockwork-network-program",
+ "miclockwork-thread-program",
+ "miclockwork-utils",
  "reqwest",
  "serde",
  "serde_json",
@@ -1314,26 +1314,6 @@ dependencies = [
  "tar",
  "termcolor",
  "thiserror",
-]
-
-[[package]]
-name = "clockwork-cron"
-version = "2.0.19"
-dependencies = [
- "chrono",
- "nom",
- "once_cell",
-]
-
-[[package]]
-name = "clockwork-network-program"
-version = "2.0.19"
-dependencies = [
- "anchor-lang",
- "anchor-spl",
- "clockwork-utils",
- "toml_datetime",
- "winnow",
 ]
 
 [[package]]
@@ -1379,57 +1359,12 @@ dependencies = [
 ]
 
 [[package]]
-name = "clockwork-sdk"
-version = "2.0.19"
-dependencies = [
- "anchor-lang",
- "chrono",
- "clockwork-thread-program",
- "nom",
- "once_cell",
-]
-
-[[package]]
-name = "clockwork-thread-program"
-version = "2.0.19"
-dependencies = [
- "anchor-lang",
- "chrono",
- "clockwork-cron",
- "clockwork-network-program",
- "clockwork-thread-program-v1",
- "clockwork-utils",
- "pyth-sdk-solana",
- "static-pubkey",
- "version",
-]
-
-[[package]]
-name = "clockwork-thread-program-v1"
-version = "1.4.4"
-dependencies = [
- "anchor-lang",
- "clockwork-anchor-gen",
-]
-
-[[package]]
-name = "clockwork-utils"
-version = "2.0.19"
-dependencies = [
- "anchor-lang",
- "base64 0.13.1",
- "serde",
- "serde_json",
- "static-pubkey",
-]
-
-[[package]]
 name = "clockwork-webhook-program"
 version = "2.0.19"
 dependencies = [
  "anchor-lang",
- "clockwork-network-program",
- "clockwork-utils",
+ "miclockwork-network-program",
+ "miclockwork-utils",
  "serde",
 ]
 
@@ -1445,17 +1380,17 @@ dependencies = [
  "bugsnag",
  "cargo_metadata",
  "chrono",
- "clockwork-cron",
- "clockwork-network-program",
  "clockwork-plugin-utils",
  "clockwork-relayer-api",
- "clockwork-thread-program",
- "clockwork-thread-program-v1",
- "clockwork-utils",
  "clockwork-webhook-program",
  "futures",
  "lazy_static",
  "log 0.4.17",
+ "miclockwork-cron",
+ "miclockwork-network-program",
+ "miclockwork-thread-program",
+ "miclockwork-thread-program-v1",
+ "miclockwork-utils",
  "prost",
  "pyth-sdk-solana",
  "reqwest",
@@ -2926,6 +2861,71 @@ dependencies = [
  "keccak",
  "rand_core 0.6.4",
  "zeroize",
+]
+
+[[package]]
+name = "miclockwork-cron"
+version = "0.1.0"
+dependencies = [
+ "chrono",
+ "nom",
+ "once_cell",
+]
+
+[[package]]
+name = "miclockwork-network-program"
+version = "0.1.0"
+dependencies = [
+ "anchor-lang",
+ "anchor-spl",
+ "miclockwork-utils",
+ "toml_datetime",
+ "winnow",
+]
+
+[[package]]
+name = "miclockwork-sdk"
+version = "0.1.0"
+dependencies = [
+ "anchor-lang",
+ "chrono",
+ "miclockwork-thread-program",
+ "nom",
+ "once_cell",
+]
+
+[[package]]
+name = "miclockwork-thread-program"
+version = "0.1.0"
+dependencies = [
+ "anchor-lang",
+ "chrono",
+ "miclockwork-cron",
+ "miclockwork-network-program",
+ "miclockwork-thread-program-v1",
+ "miclockwork-utils",
+ "pyth-sdk-solana",
+ "static-pubkey",
+ "version",
+]
+
+[[package]]
+name = "miclockwork-thread-program-v1"
+version = "0.1.0"
+dependencies = [
+ "anchor-lang",
+ "clockwork-anchor-gen",
+]
+
+[[package]]
+name = "miclockwork-utils"
+version = "0.1.0"
+dependencies = [
+ "anchor-lang",
+ "base64 0.13.1",
+ "serde",
+ "serde_json",
+ "static-pubkey",
 ]
 
 [[package]]

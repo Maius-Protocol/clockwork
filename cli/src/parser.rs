@@ -1,7 +1,7 @@
 use std::{convert::TryFrom, fs, path::PathBuf, str::FromStr};
 
 use clap::ArgMatches;
-use clockwork_thread_program::state::{SerializableAccount, SerializableInstruction, Trigger};
+use miclockwork_thread_program::state::{SerializableAccount, SerializableInstruction, Trigger};
 use clockwork_webhook_program::state::HttpMethod;
 use serde::{Deserialize as JsonDeserialize, Serialize as JsonSerialize};
 use solana_sdk::{

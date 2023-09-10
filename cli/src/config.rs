@@ -17,8 +17,8 @@ pub const CLOCKWORK_RELEASE_BASE_URL: &str =
     "https://github.com/clockwork-xyz/clockwork/releases/download";
 pub const CLOCKWORK_BIN_LOCAL: &str = "/bin/clockwork";
 pub const CLOCKWORK_DEPS: &[&str] = &[
-    "clockwork_network_program.so",
-    "clockwork_thread_program.so",
+    "miclockwork_network_program.so",
+    "miclockwork_thread_program.so",
     "clockwork_webhook_program.so",
     "libclockwork_plugin.so",
 ];

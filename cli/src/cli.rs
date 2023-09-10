@@ -1,5 +1,5 @@
 use clap::{crate_version, Arg, ArgGroup, Command};
-use clockwork_thread_program::state::{SerializableInstruction, Trigger};
+use miclockwork_thread_program::state::{SerializableInstruction, Trigger};
 use clockwork_webhook_program::state::HttpMethod;
 use solana_sdk::{pubkey::Pubkey, signature::Keypair};
 
